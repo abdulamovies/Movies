@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ku" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عەبدولا جەلال سینەما</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: Tahoma, sans-serif; }
+        body { background-color: #0d0d0d; color: #fff; padding-bottom: 70px; text-align: right; }
+        
+        /* سەرەوەی سایت و لۆگۆ */
+        .top-header { display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; background: #141414; border-bottom: 1px solid #222; }
+        .site-name { color: #f5c518; font-size: 18px; font-weight: bold; letter-spacing: 1px; }
+        .search-icon { font-size: 20px; color: #fff; cursor: pointer; }
+
+        /* بەشی هێرۆ (پۆستەری سەرەکی) */
+        .hero { position: relative; width: 100%; height: 350px; background: #1a1a1a; display: flex; flex-direction: column; justify-content: flex-end; padding: 20px; }
+        .hero h2 { color: #fff; font-size: 22px; margin-bottom: 6px; }
+        .hero p { color: #aaa; font-size: 13px; margin-bottom: 12px; line-height: 1.4; }
+        .btn-watch { background: #e50914; color: #fff; padding: 8px 20px; border-radius: 20px; text-decoration: none; width: fit-content; font-size: 13px; font-weight: bold; }
+
+        /* بەشەکان و ناونیشان */
+        .section-title { font-size: 16px; color: #e50914; margin: 25px 15px 10px; border-right: 4px solid #e50914; padding-right: 8px; }
+        
+        /* لیستی بەشەکان و خانەکان */
+        .categories-list { display: flex; gap: 10px; padding: 0 15px; overflow-x: auto; margin-bottom: 15px; }
+        .category-pill { background: #1a1a1a; color: #fff; padding: 6px 15px; border-radius: 15px; font-size: 12px; white-space: nowrap; border: 1px solid #333; text-decoration: none; }
+
+        .movies-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; padding: 0 15px; }
+        .movie-card { background: #161616; border-radius: 8px; overflow: hidden; border: 1px solid #222; }
+        .movie-img { width: 100%; height: 180px; background: #252525; }
+        .movie-info { padding: 10px; }
+        .movie-title { font-size: 13px; font-weight: bold; margin-bottom: 5px; }
+
+        /* مێنوی خوارەوە (مۆبایل نەیڤگێشن) */
+        .bottom-nav { position: fixed; bottom: 0; left: 0; width: 100%; background-color: #141414; display: flex; justify-content: space-around; padding: 10px 0; border-top: 1px solid #222; z-index: 1000; }
+        .nav-item { color: #777; text-decoration: none; font-size: 11px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 3px; }
+        .nav-item span { font-size: 16px; }
+        .nav-item.active { color: #e50914; }
+    </style>
+</head>
+<body>
+
+    <!-- سەرەوە -->
+    <div class="top-header">
+        <div class="search-icon">🔍</div>
+        <div class="site-name">عەبدولا جەلال سینەما</div>
+    </div>
+
+    <!-- پۆستەری سەرەکی -->
+    <div class="hero">
+        <h2>سایلو (2023)</h2>
+        <p>خەڵکی لەژێر زەویدا لەناو سایلۆیەکی زەبەلاحدا دەژین...</p>
+        <a href="#" class="btn-watch">▶ تەماشا بکە</a>
+    </div>
+
+    <!-- جۆرەکان -->
+    <div class="section-title">جۆرەکان</div>
+    <div class="categories-list">
+        <a href="#" class="category-pill">ئەکشن</a>
+        <a href="#" class="category-pill">دراما</a>
+        <a href="#" class="category-pill">ترسناک</a>
+        <a href="#" class="category-pill">خۆشەویستی</a>
+    </div>
+
+    <!-- نوێترین بڵاوکراوەکان -->
+    <div class="section-title">نوێترین بڵاوکراوەکان</div>
+    <div class="movies-grid">
+        <div class="movie-card">
+            <div class="movie-img"></div>
+            <div class="movie-info">
+                <div class="movie-title">شازادەی زەوی</div>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-img"></div>
+            <div class="movie-info">
+                <div class="movie-title">پاشای کۆشک</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- مێنوی خوارەوە -->
+    <div class="bottom-nav">
+        <a href="#" class="nav-item"><span>👤</span>چوونە ژوورەوە</a>
+        <a href="#" class="nav-item"><span>🎨</span>رەنگ</a>
+        <a href="#" class="nav-item"><span>🔍</span>گەڕان</a>
+        <a href="#" class="nav-item"><span>➕</span>زیاتر</a>
+        <a href="#" class="nav-item active"><span>🏠</span>سەرەتا</a>
+    </div>
+
+</body>
+</html>
